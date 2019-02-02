@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_alignParentRight="true"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              style="@style/body"
+              android:id="@+id/index"
+              android:layout_marginRight="16dp"
+              android:layout_marginTop="16dp"
+              android:textColor="@android:color/black"
+              android:background="@drawable/rounded_gray"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="16dp"
+              android:layout_alignParentEnd="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_name"
+            android:layout_below="@id/profile_image"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_alignStart="@+id/profile_image"
+            android:layout_marginBottom="20dp"
+            style="@style/body"
+            android:layout_alignLeft="@+id/profile_image"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ignore_button"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/follow_button"
+            android:layout_alignBottom="@id/profile_name"
+            android:layout_toStartOf="@id/follow_button">
+
+        <ImageView
+                android:src="@drawable/ignore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/rounded_gray_dark"
+                android:layout_gravity="center"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/ignore_button"
+                  android:layout_marginTop="8dp"
+                  android:layout_gravity="center"
+                  style="@style/hint"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_alignBottom="@id/profile_name"
+            android:id="@+id/follow_button"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignRight="@+id/index"
+            android:layout_marginEnd="60dp" android:layout_alignEnd="@+id/index">
+
+        <ImageView
+                android:src="@drawable/tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@drawable/rounded_blue"
+                android:layout_gravity="center"
+        />
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:text="@string/follow_back_button"
+                  android:layout_gravity="center"
+                  style="@style/hint"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

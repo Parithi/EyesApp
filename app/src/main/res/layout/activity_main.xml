@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:id="@+id/header"
+                  android:background="@color/colorPrimary"
+                  android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:text="@string/add_zone_label"
+                android:gravity="center"
+                android:fontFamily="@font/baloo"
+                style="@style/title"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:id="@+id/sub_title"
+                style="@style/body"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/add_friends_hint"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:layout_below="@id/header"
+                android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:id="@+id/code_area_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal">
+
+                <EditText android:layout_width="wrap_content"
+                          android:layout_height="150dp"
+                          android:layout_weight="1"
+                          style="@style/code"
+                          android:id="@+id/bluecode"
+                          android:gravity="center"
+                          android:background="@drawable/rect_blue"/>
+
+                <EditText android:layout_width="wrap_content"
+                          android:layout_height="150dp"
+                          android:layout_weight="1"
+                          style="@style/code"
+                          android:id="@+id/purplecode"
+                          android:gravity="center"
+                          android:background="@drawable/rectangle_purple"/>
+
+                <EditText android:layout_width="wrap_content"
+                          android:layout_height="150dp"
+                          android:layout_weight="1"
+                          style="@style/code"
+                          android:id="@+id/redcode"
+                          android:gravity="center"
+                          android:layout_gravity="center"
+                          android:background="@drawable/rectangle_red"/>
+
+                <EditText android:layout_width="wrap_content"
+                          android:layout_height="150dp"
+                          android:layout_weight="1"
+                          style="@style/code"
+                          android:id="@+id/yellowcode"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:background="@drawable/rectangle_yellow"/>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/they_added_you_label"
+                    android:text="@string/they_added_you_label"
+                    android:drawableLeft="@drawable/dash"
+                    android:drawablePadding="8dp"
+                    android:layout_below="@+id/code_area_layout"
+                    style="@style/caption"
+                    android:drawableStart="@drawable/dash"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/they_added_you_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/they_added_you_recycler_view"
+                    android:text="@string/add_zone_label"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/suggested_label"
+                    android:text="@string/suggested_label"
+                    android:drawableLeft="@drawable/drink"
+                    android:drawablePadding="8dp"
+                    android:layout_below="@+id/they_added_you_recycler_view"
+                    style="@style/caption"
+                    android:drawableStart="@drawable/drink"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/suggested_users_recycler_view"
+                    android:layout_below="@+id/suggested_label"
+            />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

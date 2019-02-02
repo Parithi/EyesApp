@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EyesApp</string>
+    <string name="add_friends_hint">add your friends with their code</string>
+    <string name="add_zone_label">Add zone</string>
+    <string name="suggested_label">Suggested</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="they_added_you_label">They Added You</string>
+    <string name="follow_back_button">follow back</string>
+    <string name="ignore_button">ignore</string>
+    <string name="add_button">Add</string>
+</resources>

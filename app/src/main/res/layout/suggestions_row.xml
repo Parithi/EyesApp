@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" android:background="@color/colorPrimary"
+              android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_centerVertical="true"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:id="@+id/details"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_toEndOf="@id/profile_image">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_name"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                style="@style/main_text"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/school"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                style="@style/hint"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/grade"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                style="@style/hint"
+        />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+        >
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/call"
+                       style="@style/icon"
+                       android:src="@drawable/phone_receiver_1"
+            />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/favorite"
+                       style="@style/icon"
+                       android:src="@drawable/star"
+            />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/like"
+                       style="@style/icon"
+                       android:src="@drawable/valentines_heart"
+            />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/chat"
+                       style="@style/icon"
+                       android:src="@drawable/black_bubble_speech"
+            />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/rssfeed"
+                       style="@style/icon"
+                       android:src="@drawable/social_rss"
+            />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/details"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/details" android:layout_alignParentEnd="true">
+
+        <ImageView
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_toLeftOf="@id/add_button"
+                android:layout_centerVertical="true"
+                android:src="@drawable/combined_shape"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content" android:layout_toStartOf="@id/add_button"
+                android:layout_marginEnd="8dp"/>
+
+        <TextView
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:background="@drawable/rounded_blue"
+                android:text="@string/add_button"
+                style="@style/body"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/add"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/add" android:layout_marginEnd="16dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
