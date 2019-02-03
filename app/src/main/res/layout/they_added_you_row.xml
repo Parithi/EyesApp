@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_width="match_parent"
         android:background="@color/colorPrimary"
         android:layout_height="match_parent">
 
@@ -88,14 +88,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
+                android:id="@+id/follow_image"
+                android:visibility="gone"
                 android:background="@drawable/rounded_blue"
                 android:layout_gravity="center"
         />
 
+        <TextView
+                android:id="@+id/nice_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_blue"
+                android:visibility="gone"
+                android:text="@string/nice_button"
+                style="@style/button"
+        />
 
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_marginTop="8dp"
+                  android:id="@+id/follow_label"
                   android:text="@string/follow_back_button"
                   android:layout_gravity="center"
                   style="@style/hint"/>

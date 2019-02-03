@@ -1,18 +1,18 @@
-1,Grace Peltz,Louis Vincent High School,Grade 1,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/37.jpg
-2,Natalie Dawes,Lassiter High School,Grade 2,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/30.jpg
-3,Eric Decarlo,School of Life,Grade 3,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,https://randomuser.me/api/portraits/women/59.jpg
-4,Lelia Schlanger,Louis Vincent High School,Grade 4,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/46.jpg
-5,Melina Devoe,Lassiter High School,Grade 5,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/90.jpg
-6,Ruthie Giraud,School of Life,Grade 6,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/19.jpg
-7,Zandra Stutes,Louis Vincent High School,Grade 7,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/81.jpg
-8,Heide Drummer,Lassiter High School,Grade 8,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/83.jpg
-9,Hyman Bury,School of Life,Grade 9,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/28.jpg
-10,Claire Almond,Louis Vincent High School,Grade 10,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/35.jpg
+1,Grace Peltz,Louis Vincent High School,Grade 1,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,https://randomuser.me/api/portraits/women/37.jpg
+2,Natalie Dawes,Lassiter High School,Grade 2,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,https://randomuser.me/api/portraits/women/30.jpg
+3,Eric Decarlo,School of Life,Grade 3,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,https://randomuser.me/api/portraits/women/59.jpg
+4,Lelia Schlanger,Louis Vincent High School,Grade 4,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,https://randomuser.me/api/portraits/men/46.jpg
+5,Melina Devoe,Lassiter High School,Grade 5,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,https://randomuser.me/api/portraits/women/90.jpg
+6,Ruthie Giraud,School of Life,Grade 6,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,https://randomuser.me/api/portraits/men/19.jpg
+7,Zandra Stutes,Louis Vincent High School,Grade 7,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/81.jpg
+8,Heide Drummer,Lassiter High School,Grade 8,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,https://randomuser.me/api/portraits/women/83.jpg
+9,Hyman Bury,School of Life,Grade 9,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/28.jpg
+10,Claire Almond,Louis Vincent High School,Grade 10,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/35.jpg
 11,Nia Kissane,Lassiter High School,Grade 11,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/76.jpg
-12,Sabra Villavicencio,School of Life,Grade 12,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/16.jpg
+12,Sabra Villavicencio,School of Life,Grade 12,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/16.jpg
 13,Gita Tedesco,Louis Vincent High School,Grade 13,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/96.jpg
 14,Brigitte Currence,Lassiter High School,Grade 14,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,https://randomuser.me/api/portraits/women/12.jpg
-15,Enriqueta Tippetts,School of Life,Grade 15,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/13.jpg
+15,Enriqueta Tippetts,School of Life,Grade 15,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/13.jpg
 16,Pedro Lenahan,Louis Vincent High School,Grade 16,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/97.jpg
 17,Luke Hoskin,Lassiter High School,Grade 17,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/men/89.jpg
 18,Deedra Stills,School of Life,Grade 18,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,https://randomuser.me/api/portraits/women/38.jpg

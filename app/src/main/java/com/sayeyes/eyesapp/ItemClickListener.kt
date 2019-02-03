@@ -1,5 +1,6 @@
 package com.sayeyes.eyesapp
 
+
 interface ItemClickListener {
-    fun itemClicked(position : Int)
+    fun deleteItemAt(tag : HomeTags, position : Int)
 }

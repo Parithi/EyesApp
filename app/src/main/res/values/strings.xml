@@ -8,6 +8,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="they_added_you_label">They Added You</string>
     <string name="follow_back_button">follow back</string>
+    <string name="followed_back_label">followed you back</string>
     <string name="ignore_button">ignore</string>
+    <string name="nice_button">nice</string>
+    <string name="success">Success!</string>
+    <string name="failure">Failed!</string>
     <string name="add_button">Add</string>
 </resources>
