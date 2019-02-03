@@ -22,10 +22,10 @@ import org.koin.core.parameter.parametersOf
 
 class MainActivity : AppCompatActivity(), HomeContract.View, ItemClickListener {
 
-
-
     private val presenter : HomePresenter by inject { parametersOf(this) }
-    var codeViewArray = arrayOf(R.id.redcode,R.id.purplecode,R.id.bluecode,R.id.yellowcode)
+
+    private var codeViewArray = arrayOf(R.id.redcode,R.id.purplecode,R.id.bluecode,R.id.yellowcode)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
