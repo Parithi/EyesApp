@@ -1,7 +1,6 @@
 package com.sayeyes.eyesapp.adapters
 
 import android.content.Context
-import android.os.Handler
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -59,13 +58,13 @@ class TheyAddedYouAdapter(var context : Context, var users : List<User>, var lis
 
 
     inner class TheyAddedYouViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var profileImageView = itemView.findViewById<CircleImageView>(R.id.profile_image)
-        var profileName = itemView.findViewById<TextView>(R.id.profile_name)
-        var index = itemView.findViewById<TextView>(R.id.index)
-        var follow = itemView.findViewById<LinearLayout>(R.id.follow_button)
-        var ignore = itemView.findViewById<LinearLayout>(R.id.ignore_button)
-        var followImage = itemView.findViewById<ImageView>(R.id.follow_image)
-        var nice = itemView.findViewById<TextView>(R.id.nice_button)
-        var follow_label = itemView.findViewById<TextView>(R.id.follow_label)
+        var profileImageView = itemView.findViewById<CircleImageView>(R.id.profile_image)!!
+        var profileName = itemView.findViewById<TextView>(R.id.profile_name)!!
+        var index = itemView.findViewById<TextView>(R.id.index)!!
+        var follow = itemView.findViewById<LinearLayout>(R.id.follow_button)!!
+        var ignore = itemView.findViewById<LinearLayout>(R.id.ignore_button)!!
+        var followImage = itemView.findViewById<ImageView>(R.id.follow_image)!!
+        var nice = itemView.findViewById<TextView>(R.id.nice_button)!!
+        var follow_label = itemView.findViewById<TextView>(R.id.follow_label)!!
     }
 }

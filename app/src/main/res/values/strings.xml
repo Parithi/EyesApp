@@ -14,4 +14,6 @@
     <string name="success">Success!</string>
     <string name="failure">Failed!</string>
     <string name="add_button">Add</string>
+    <string name="added_label">Added!</string>
+    <string name="adding_label">Adding..</string>
 </resources>

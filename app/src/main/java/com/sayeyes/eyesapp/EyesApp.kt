@@ -1,7 +1,7 @@
 package com.sayeyes.eyesapp
 
 import android.app.Application
-import com.parithi.paintora.di.appModule
+import appModule
 import org.koin.core.context.startKoin
 
 class EyesApp : Application() {

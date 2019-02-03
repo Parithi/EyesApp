@@ -18,5 +18,6 @@ interface HomeContract {
     interface Presenter {
         fun prepareData(context: Context)
         fun removeUserFromPosition(tag : HomeTags, position: Int)
+        fun addUserAtPosition(tag: HomeTags, position: Int)
     }
 }

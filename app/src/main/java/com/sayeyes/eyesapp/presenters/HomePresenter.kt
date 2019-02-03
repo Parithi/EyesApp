@@ -8,6 +8,7 @@ import com.sayeyes.eyesapp.model.User
 
 class HomePresenter(var view : HomeContract.View, var repo : Repository) : HomeContract.Presenter {
 
+
     lateinit var theyAddedYouUsers : MutableList<User>
     lateinit var suggestedUsers : MutableList<User>
 
@@ -28,6 +29,12 @@ class HomePresenter(var view : HomeContract.View, var repo : Repository) : HomeC
                 view.updateTheyAddedYou(theyAddedYouUsers.count() == 0)
             }
         }
+    }
 
+    override fun addUserAtPosition(tag: HomeTags, position: Int) {
+        if(tag == HomeTags.SUGGESTED_USERS){
+            suggestedUsers[position].added = true
+            view.updateSuggestedUsers(suggestedUsers.count() == 0)
+        }
     }
 }

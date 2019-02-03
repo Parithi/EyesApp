@@ -6,6 +6,8 @@ import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.LinearSnapHelper
 import android.text.InputFilter
+import android.util.Log
+import android.view.Gravity
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
@@ -16,12 +18,11 @@ import com.sayeyes.eyesapp.presenters.HomePresenter
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 import org.koin.core.parameter.parametersOf
-import android.view.Gravity
-
-
 
 
 class MainActivity : AppCompatActivity(), HomeContract.View, ItemClickListener {
+
+
 
     private val presenter : HomePresenter by inject { parametersOf(this) }
     var codeViewArray = arrayOf(R.id.redcode,R.id.purplecode,R.id.bluecode,R.id.yellowcode)
@@ -89,5 +90,9 @@ class MainActivity : AppCompatActivity(), HomeContract.View, ItemClickListener {
 
     override fun deleteItemAt(tag: HomeTags, position: Int) {
         presenter.removeUserFromPosition(tag, position)
+    }
+
+    override fun addItemAt(tag: HomeTags, position: Int) {
+        presenter.addUserAtPosition(tag, position)
     }
 }
